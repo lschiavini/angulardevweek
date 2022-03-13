@@ -1,1 +1,24 @@
-<p>incidences works!</p>
+
+
+
+<div class="margin">
+    <mat-card>
+        <mat-card-subtitle>
+            Consulta de exames de mamografia - Relação de Regiões
+        </mat-card-subtitle>
+        <table matSort (matSortChange)="regions">
+            <tr>
+              <th mat-sort-header="id">ID</th>
+              <th mat-sort-header="region">Região</th>
+              <th mat-sort-header="total_exams">N# de Exames</th>
+            </tr>
+          
+            <tr *ngFor="let element of regions">
+                <td>{{element.id}}</td>
+                <td>{{element.region}}</td>
+                <td>{{element.total_exams}}</td>
+            </tr>
+        </table>
+    </mat-card>
+    
+</div>

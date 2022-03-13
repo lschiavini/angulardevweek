@@ -12,7 +12,8 @@ export class RegionService {
 
   listRegions() : Region[]{
     return[
-      { id: 1, region: 'North', total_exams: 1500 }
+      { id: 1, region: 'North', total_exams: 1500 },
+      { id: 2, region: 'South', total_exams: 2 }
     ];
   }
 }
