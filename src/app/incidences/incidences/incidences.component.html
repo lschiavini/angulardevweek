@@ -1,7 +1,65 @@
+<div class="margem">
+    <mat-card>
+      <mat-card-subtitle>Exames de mamografia entre Junho e Julho de 2015</mat-card-subtitle>
+  
+      <table matSort (matSortChange)="incidences_exam">
+        <tr>
+          <th mat-sort-header="id">ID</th>
+          <th mat-sort-header="regiao_id">ID Região</th>
+          <th mat-sort-header="Mes">Mês</th>
+          <th mat-sort-header="faixa_id">ID Faixa Etaria</th>
+          <th mat-sort-header="qnt_exames">N° de exames</th>
+        </tr>
+  
+        <tr *ngFor="let element of incidences_exam">
+          <td>{{element.id}}</td>
+          <td>{{element.region_id}}</td>
+          <td>{{element.month}}</td>
+          <td>{{element.ageGroup_id}}</td>
+          <td>{{element.qty_exams}}</td>
+        </tr>
+      </table>
+    </mat-card>
+  
+    <mat-card>
+      <mat-card-subtitle>Relação de Regiões Brasileiras</mat-card-subtitle>
+      <table matSort (matSortChange)="regions">
+        <tr>
+          <th mat-sort-header="id">ID</th>
+          <th mat-sort-header="regiao'">Região</th>
+          <th mat-sort-header="total">N° Exames</th>
+        </tr>
+        <tr *ngFor="let element of regions">
+          <td>{{element.id}}</td>
+          <td>{{element.region}}</td>
+          <td>{{element.qty_exams}}</td>
+        </tr>
+      </table>
+    </mat-card>
+  
+    <mat-card>
+      <mat-card-subtitle>Faixa Etaria das mulheres que realizaram os exames</mat-card-subtitle>
+      <table matSort (matSortChange)="age_group">
+        <tr>
+          <th mat-sort-header="id">ID</th>
+          <th mat-sort-header="faixa_i">Faixa inicial</th>
+          <th mat-sort-header="faixa_n">Faixa final</th>
+          <th mat-sort-header="descricao">Descrição</th>
+        </tr>
+        <tr *ngFor="let element of age_group">
+          <td>{{element.id}}</td>
+          <td>{{element.ageGroupI}}</td>
+          <td>{{element.ageGroupN}}</td>
+          <td>{{element.description}}</td>
+        </tr>
+      </table>
+    </mat-card>
+  
+  </div>
+  
 
 
-
-<div class="margin">
+<!-- <div class="margin">
     <mat-card>
         <mat-card-subtitle>
             Consulta de exames de mamografia - Relação de Regiões
@@ -16,9 +74,9 @@
             <tr *ngFor="let element of regions">
                 <td>{{element.id}}</td>
                 <td>{{element.region}}</td>
-                <td>{{element.total_exams}}</td>
+                <td>{{element.qty_exams}}</td>
             </tr>
         </table>
     </mat-card>
     
-</div>
+</div> -->
