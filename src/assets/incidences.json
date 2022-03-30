@@ -1,0 +1,5 @@
+[
+    {"id": 1, "region_id": 2, "month": 2, "ageGroup_id": 1, "qty_exams": 1500 },
+    {"id": 2, "region_id": 5, "month": 6, "ageGroup_id": 2, "qty_exams": 44 },
+    {"id": 3, "region_id": 3, "month": 3, "ageGroup_id": 3, "qty_exams": 22 }
+]

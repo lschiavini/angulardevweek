@@ -1,0 +1,5 @@
+[
+    { "id": 1, "ageGroupI": 2, "ageGroupN": 5, "description": "kindergarden" },
+    { "id": 3, "ageGroupI": 2, "ageGroupN": 5, "description": "kindergarden" },
+    { "id": 2, "ageGroupI": 20, "ageGroupN": 30, "description": "youngadult" }
+]

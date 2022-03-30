@@ -1,19 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Region } from '../model/region';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class RegionService {
 
-  constructor() {
-  
+  constructor(private http: HttpClient) {
+    
   }
 
-  listRegions() : Region[]{
-    return[
-      { id: 1, region: 'North', total_exams: 1500 },
-      { id: 2, region: 'South', total_exams: 2 }
-    ];
+  listRegions() : Observable<Region[]>{
+    const url = 'assets/regions.json'
+    return this.http.get<Region[]>(url);
   }
 }
