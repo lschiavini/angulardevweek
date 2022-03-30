@@ -1,7 +1,7 @@
 export interface Incidence {
     id: number;
-    region_id: number;
+    regionId: number;
     month: number;
-    ageGroup_id: number;
-    qty_exams: number;
+    ageGroupId: number;
+    qtyExams: number;
 }

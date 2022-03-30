@@ -13,7 +13,8 @@ export class IncidenceService {
     }
 
     listIncidences(): Observable<Incidence[]> {
-        const url = 'assets/incidences.json'
+        // const url = 'assets/incidences.json';
+        const url = 'api/incidence';
         return this.http.get<Incidence[]>(url);
     }
 }

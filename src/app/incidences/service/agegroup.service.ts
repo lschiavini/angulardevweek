@@ -12,7 +12,8 @@ export class AgeGroupService {
     }
 
     listAgeGroups(): Observable<AgeGroup[]> {
-        const url = 'assets/ageGroup.json'
+        // const url = 'assets/ageGroup.json';
+        const url = 'api/agegroup';
         return this.http.get<AgeGroup[]>(url);
     }
 }

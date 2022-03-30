@@ -13,10 +13,10 @@
   
         <tr *ngFor="let element of incidences_exam">
           <td>{{element.id}}</td>
-          <td>{{element.region_id}}</td>
+          <td>{{element.regionId}}</td>
           <td>{{element.month}}</td>
-          <td>{{element.ageGroup_id}}</td>
-          <td>{{element.qty_exams}}</td>
+          <td>{{element.ageGroupId}}</td>
+          <td>{{element.qtyExams}}</td>
         </tr>
       </table>
     </mat-card>
@@ -74,7 +74,7 @@
             <tr *ngFor="let element of regions">
                 <td>{{element.id}}</td>
                 <td>{{element.region}}</td>
-                <td>{{element.qty_exams}}</td>
+                <td>{{element.qtyExams}}</td>
             </tr>
         </table>
     </mat-card>
